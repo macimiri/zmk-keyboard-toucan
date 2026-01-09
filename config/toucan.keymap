@@ -30,7 +30,7 @@
         modnav {
             display-name = "NAV";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHIFT  &caps_word  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHIFT  &caps_word  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
