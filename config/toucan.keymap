@@ -69,7 +69,7 @@
         navsym {
             display-name = "SYM";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp PLUS  &kp N7  &kp N8  &kp N9  &kp KP_ASTERISK  &trans  &trans  &kp CARET  &kp AMPS  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp MINUS  &kp N4  &kp N5  &kp N6  &mt BACKSLASH SLASH  &trans  &trans  &kp TAB  &kp DELETE  &kp RBKT  &kp RPAR  &kp RBRC  &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &lt 1 DOT  &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp PLUS  &kp N7  &kp N8  &kp N9  &kp KP_ASTERISK  &trans  &trans  &kp CARET  &kp AMPS  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp MINUS  &kp N4  &kp N5  &kp N6  &mt BACKSLASH SLASH  &trans  &trans  &kp TAB  &kp DELETE  &kp RBKT  &kp RPAR  &kp RBRC  &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &lt 1 PERIOD  &trans
             >;
         };
 
