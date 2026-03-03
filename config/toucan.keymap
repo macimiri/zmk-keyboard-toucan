@@ -17,19 +17,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <15 16>;
-        };
-
-        rpar {
-            bindings = <&kp RPAR>;
-            key-positions = <19 20>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         l_hrm: l_hrm {
