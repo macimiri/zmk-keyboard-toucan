@@ -73,14 +73,14 @@
         qwerty {
             display-name = "qwe";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &l_hrm LGUI A  &l_hrm LALT S  &l_hrm LCTRL D  &l_hrm LSHFT F  &kp G  &kp H  &r_hrm RSHFT J  &r_hrm RCTRL K  &r_hrm RALT L  &r_hrm RGUI SEMI  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp APOS  &none  &bootloader  &lt 3 ENTER  &kp ESC  &kp BACKSPACE  &lt 2 SPACE  &bootloader
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &l_hrm LGUI A  &l_hrm LALT S  &l_hrm LCTRL D  &l_hrm LSHFT F  &kp G  &kp H  &r_hrm RSHFT J  &r_hrm RCTRL K  &r_hrm RALT L  &r_hrm RGUI SEMI  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp APOS  &none  &none  &lt 3 ENTER  &kp ESC  &kp BACKSPACE  &lt 2 SPACE  &none
             >;
         };
 
         graphite {
             display-name = "grph";
             bindings = <
-&none  &kp B  &kp L  &kp D  &kp W  &kp Z  &kp SEMI  &kp F  &kp O  &kp U  &kp J  &none  &none  &l_hrm LGUI N  &l_hrm LALT R  &l_hrm LCTRL T  &l_hrm LSHFT S  &kp G  &kp Y  &r_hrm RSHFT H  &r_hrm RCTRL A  &r_hrm RALT E  &r_hrm RGUI I  &none  &none  &kp Q  &kp X  &kp M  &kp C  &kp V  &kp K  &kp P  &kp COMMA  &kp DOT  &kp APOS  &none  &bootloader  &lt 3 ENTER  &kp ESC  &kp BACKSPACE  &lt 2 SPACE  &bootloader
+&none  &kp B  &kp L  &kp D  &kp W  &kp Z  &kp SEMI  &kp F  &kp O  &kp U  &kp J  &none  &none  &l_hrm LGUI N  &l_hrm LALT R  &l_hrm LCTRL T  &l_hrm LSHFT S  &kp G  &kp Y  &r_hrm RSHFT H  &r_hrm RCTRL A  &r_hrm RALT E  &r_hrm RGUI I  &none  &none  &kp Q  &kp X  &kp M  &kp C  &kp V  &kp K  &kp P  &kp COMMA  &kp DOT  &kp APOS  &none  &none  &lt 3 ENTER  &kp ESC  &kp BACKSPACE  &lt 2 SPACE  &none
             >;
         };
 
