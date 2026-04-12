@@ -12,8 +12,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 
@@ -70,31 +70,38 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
-            display-name = "BASE";
+        qwerty {
+            display-name = "qwe";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &l_hrm LGUI A  &l_hrm LALT S  &l_hrm LCTRL D  &l_hrm LSHFT F  &kp G  &kp H  &r_hrm RSHFT J  &r_hrm RCTRL K  &r_hrm RALT L  &r_hrm RGUI SEMI  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp APOS  &none  &bootloader  &lt 2 ENTER  &kp ESC  &kp BACKSPACE  &lt 1 SPACE  &bootloader
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &l_hrm LGUI A  &l_hrm LALT S  &l_hrm LCTRL D  &l_hrm LSHFT F  &kp G  &kp H  &r_hrm RSHFT J  &r_hrm RCTRL K  &r_hrm RALT L  &r_hrm RGUI SEMI  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp APOS  &none  &bootloader  &lt 3 ENTER  &kp ESC  &kp BACKSPACE  &lt 2 SPACE  &bootloader
             >;
         };
 
-        modnav {
-            display-name = "NAV";
+        graphite {
+            display-name = "graphite";
+            bindings = <
+&none  &kp B  &kp L  &kp D  &kp W  &kp Z  &kp SEMI  &kp F  &kp O  &kp U  &kp J  &none  &none  &l_hrm LGUI N  &l_hrm LALT R  &l_hrm LCTRL T  &l_hrm LSHFT S  &kp G  &kp Y  &r_hrm RSHFT H  &r_hrm RCTRL A  &r_hrm RALT E  &r_hrm RGUI I  &none  &none  &kp Q  &kp X  &kp M  &kp C  &kp V  &kp K  &kp P  &kp COMMA  &kp DOT  &kp APOS  &none  &bootloader  &lt 3 ENTER  &kp ESC  &kp BACKSPACE  &lt 2 SPACE  &bootloader
+            >;
+        };
+
+        nav {
+            display-name = "nav";
             bindings = <
 &trans  &kp TILDE  &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &caps_word  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &custom_bl 0 0  &trans  &trans
             >;
         };
 
-        navsym {
-            display-name = "SYM";
+        symnum {
+            display-name = "symnum";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp PLUS  &kp N7  &kp N8  &kp N9  &kp KP_ASTERISK  &trans  &trans  &kp CARET  &kp AMPS  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp MINUS  &kp N4  &kp N5  &kp N6  &slash_backslash  &trans  &trans  &kp TAB  &kp DELETE  &kp RBKT  &kp RPAR  &kp RBRC  &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans  &trans  &trans  &custom_bl 0 0  &trans  &lt 1 PERIOD  &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp PLUS  &kp N7  &kp N8  &kp N9  &kp KP_ASTERISK  &trans  &trans  &kp CARET  &kp AMPS  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp MINUS  &kp N4  &kp N5  &kp N6  &slash_backslash  &trans  &trans  &kp TAB  &kp DELETE  &kp RBKT  &kp RPAR  &kp RBRC  &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans  &trans  &trans  &custom_bl 0 0  &trans  &lt 2 PERIOD  &trans
             >;
         };
 
-        EXT {
+        ext {
             display-name = "ext";
             bindings = <
-&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &studio_unlock  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &bootloader  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &tog 1  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &studio_unlock  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &bootloader  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
