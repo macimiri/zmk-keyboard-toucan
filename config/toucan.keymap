@@ -54,7 +54,7 @@
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp BACKSLASH>;
 
-            tapping-term-ms = <125>;
+            tapping-term-ms = <150>;
         };
 
         custom_bl: custom_bl {
