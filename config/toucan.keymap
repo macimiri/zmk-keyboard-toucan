@@ -78,7 +78,7 @@
         };
 
         graphite {
-            display-name = "graphite";
+            display-name = "grph";
             bindings = <
 &none  &kp B  &kp L  &kp D  &kp W  &kp Z  &kp SEMI  &kp F  &kp O  &kp U  &kp J  &none  &none  &l_hrm LGUI N  &l_hrm LALT R  &l_hrm LCTRL T  &l_hrm LSHFT S  &kp G  &kp Y  &r_hrm RSHFT H  &r_hrm RCTRL A  &r_hrm RALT E  &r_hrm RGUI I  &none  &none  &kp Q  &kp X  &kp M  &kp C  &kp V  &kp K  &kp P  &kp COMMA  &kp DOT  &kp APOS  &none  &bootloader  &lt 3 ENTER  &kp ESC  &kp BACKSPACE  &lt 2 SPACE  &bootloader
             >;
@@ -92,7 +92,7 @@
         };
 
         symnum {
-            display-name = "symnum";
+            display-name = "sym#";
             bindings = <
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp PLUS  &kp N7  &kp N8  &kp N9  &kp KP_ASTERISK  &trans  &trans  &kp CARET  &kp AMPS  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp MINUS  &kp N4  &kp N5  &kp N6  &slash_backslash  &trans  &trans  &kp TAB  &kp DELETE  &kp RBKT  &kp RPAR  &kp RBRC  &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans  &trans  &trans  &custom_bl 0 0  &trans  &lt 2 PERIOD  &trans
             >;
