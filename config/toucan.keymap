@@ -1,103 +1,32 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
+/* #include <behaviors.dtsi> */
+/* #include <dt-bindings/zmk/bt.h> */
+/* #include <dt-bindings/zmk/keys.h> */
 
-/ {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+// config/toucan.keymap
+// Selenium (https://github.com/OneDeadKey/selenium), via zmk-config-aekeynox.
 
-        tri_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
-        };
-    };
+// --- Optional settings: define BEFORE the #include, not by editing
+// zmk-config-aekeynox/include/aekeynox/settings.h — that file lives inside
+// the pulled dependency and any edits there are lost on the next `west update`.
+// #define KB_LAYOUT_QWERTY_INTL   // uncomment if your OS isn't plain US QWERTY
+#define MACOS                   // uncomment if this build targets a Mac
+// #define VIM_NAVIGATION          // Vim-style nav/num split layer
+// #define HRM_SHIFT               // adds a pinky-shift home row mod
 
-    combos { compatible = "zmk,combos"; };
+// Toucan's active 34 keys: 5+5 main columns per row, no outer columns — but
+// the *inner* thumb key on each hand survived (positions 37/38 & 39/40),
+// not the outer one, so this uses LT2/LT3/RT3/RT2, unlike the Ferris/Re:Gret
+// examples which keep LT1/LT2/RT2/RT1.
+#define SELENIUM_KEYMAP_BINDINGS(LOUT1,  LROW1,  RROW1,  ROUT1, \
+                                 LOUT2,  LROW2,  RROW2,  ROUT2, \
+                                 LOUT3,  LROW3,  RROW3,  ROUT3, \
+                                 LT1, LT2, LT3,  RT3, RT2, RT1) \
+      LROW1   RROW1 \
+      LROW2   RROW2 \
+      LROW3   RROW3 \
+    LT2 LT3   RT3 RT2
 
-    behaviors {
-        l_hrm: l_hrm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "L_HRM";
-            bindings = <&kp>, <&kp>;
+// Only two thumb keys per hand -> forces Selenium's 2TK hold-tap flavor.
+#define FOUR_THUMB_KEYS
 
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <80>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <39 40 41 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
-        };
-
-        r_hrm: r_hrm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "R_HRM";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <80>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 3>;
-        };
-
-        slash_backslash: slash_backslash {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SLASH_BACKSLASH";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp BACKSLASH>;
-
-            tapping-term-ms = <150>;
-        };
-
-        custom_bl: custom_bl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CUSTOM_BL";
-            bindings = <&bootloader>, <&trans>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <2000>;
-        };
-    };
-
-    keymap {
-        compatible = "zmk,keymap";
-
-        qwerty {
-            display-name = "qwe";
-            bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &l_hrm LGUI A  &l_hrm LALT S  &l_hrm LCTRL D  &l_hrm LSHFT F  &kp G  &kp H  &r_hrm RSHFT J  &r_hrm RCTRL K  &r_hrm RALT L  &r_hrm RGUI SEMI  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp APOS  &none  &none  &lt 3 ENTER  &kp ESC  &kp BACKSPACE  &lt 2 SPACE  &none
-            >;
-        };
-
-        graphite {
-            display-name = "grph";
-            bindings = <
-&none  &kp B  &kp L  &kp D  &kp W  &kp Z  &kp SEMI  &kp F  &kp O  &kp U  &kp J  &none  &none  &l_hrm LGUI N  &l_hrm LALT R  &l_hrm LCTRL T  &l_hrm LSHFT S  &kp G  &kp Y  &r_hrm RSHFT H  &r_hrm RCTRL A  &r_hrm RALT E  &r_hrm RGUI I  &none  &none  &kp Q  &kp X  &kp M  &kp C  &kp V  &kp K  &kp P  &kp COMMA  &kp DOT  &kp APOS  &none  &none  &lt 3 ENTER  &kp ESC  &kp BACKSPACE  &lt 2 SPACE  &none
-            >;
-        };
-
-        nav {
-            display-name = "nav";
-            bindings = <
-&trans  &kp TILDE  &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &caps_word  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &custom_bl 0 0  &trans  &trans
-            >;
-        };
-
-        symnum {
-            display-name = "sym#";
-            bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp PLUS  &kp N7  &kp N8  &kp N9  &kp KP_ASTERISK  &trans  &trans  &kp CARET  &kp AMPS  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp MINUS  &kp N4  &kp N5  &kp N6  &slash_backslash  &trans  &trans  &kp TAB  &kp DELETE  &kp RBKT  &kp RPAR  &kp RBRC  &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &lt 2 PERIOD  &trans
-            >;
-        };
-
-        ext {
-            display-name = "ext";
-            bindings = <
-&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &tog 1  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &studio_unlock  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &bootloader  &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-    };
-};
+#include <aekeynox/selenium.keymap>

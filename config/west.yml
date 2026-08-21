@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: geeksville
       url-base: https://github.com/geeksville
+    - name: onedeadkey
+      url-base: https://github.com/OneDeadKey
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -20,5 +22,8 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3
+    - name: zmk-config-aekeynox
+      remote: onedeadkey
+      revision: 209e9b8cfa2aaa1c881f75eda6bdf118d65f7216
   self:
     path: config
