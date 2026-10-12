@@ -97,27 +97,27 @@
         main {
             display-name = "main";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &kp A  &l_hrm LGUI S  &l_hrm LCTRL D  &l_hrm LALT F  &kp G  &kp H  &r_hrm RALT J  &r_hrm RCTRL K  &r_hrm RGUI L  &kp SEMI  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none  &none  &modtap_holdpref LSHIFT ESC  &laytap_holdpref 1 BSPC  &laytap_holdpref 2 SPACE  &laytap_holdpref 3 ENTER  &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &kp A  &l_hrm LALT S  &l_hrm LGUI D  &l_hrm LCTRL F  &kp G  &kp H  &r_hrm RCTRL J  &r_hrm RGUI K  &r_hrm RALT L  &kp SEMI  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none  &none  &modtap_holdpref LSHIFT ESC  &laytap_holdpref 1 BSPC  &laytap_holdpref 2 SPACE  &laytap_holdpref 3 ENTER  &none
             >;
         };
 
         nav {
             display-name = "nav";
             bindings = <
-&trans  &trans  &kp LG(W)  &trans  &trans  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans  &trans  &trans  &kp LG(A)  &kp LG(S)  &kp LS(TAB)  &kp TAB  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(Y)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LG(W)  &trans  &trans  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans  &trans  &trans  &kp LG(A)  &kp LG(S)  &kp LS(TAB)  &kp TAB  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(Y)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans  &trans  &trans  &trans  &mo 4  &trans  &trans
             >;
         };
 
         num {
             display-name = "num";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp PLUS  &kp N7  &kp N8  &kp N9  &kp KP_ASTERISK  &trans  &trans  &kp CARET  &kp AMPS  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp MINUS  &kp N4  &kp N5  &kp N6  &slash_backslash  &trans  &trans  &kp TAB  &kp DELETE  &kp RBKT  &kp RPAR  &kp RBRC  &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &lt 1 PERIOD  &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp COMMA  &kp DOT  &kp COLON  &kp FSLH  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         sym {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp CARET  &kp LT  &kp GT  &kp DLLR  &kp PRCNT  &kp AT  &kp AMPS  &kp STAR  &kp APOS  &kp GRAVE  &trans  &trans  &kp LBRC  &kp LPAR  &kp RPAR  &kp RBRC  &kp EQUAL  &kp BSLH  &kp PLUS  &kp MINUS  &kp FSLH  &kp DOUBLE_QUOTES  &trans  &trans  &kp TILDE  &kp LBKT  &kp RBKT  &kp UNDER  &kp HASH  &kp PIPE  &kp EXCL  &kp SEMI  &kp COLON  &kp QMARK  &trans  &trans  &mo 2  &kp SPACE  &trans  &trans  &trans
             >;
         };
 
